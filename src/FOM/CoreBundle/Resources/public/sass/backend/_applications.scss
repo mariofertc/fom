@@ -248,12 +248,21 @@ $elementPopupWidth: $popupModalWidth - ($space * 3);
   .checkWrapper{margin-bottom:$space/2;}
   .labelCheck{margin-right:$space;}
 }
+
+//
+// XXXVH: WATCHOUT - The markup of the print client - admin dialog
+//                   is 100% pain in the ass! Tried to improve and simplify 
+//                   the markup ...
+//                   That is the reason why sass below is too complex.
+//                   
+// 
+
+$printClientLabel:110px;
 .elementFormPrintClient{
-  $label:110px;
   overflow: auto;
   height:380px;
-  .labelInput{width:$label;}
-  .dropdown, .input{width:$elementPopupWidth - $label  - $space;}
+  .labelInput{width:$printClientLabel;}
+  .dropdown, .input{width:$elementPopupWidth - $printClientLabel  - $space;}
   .checkWrapper{margin-bottom:$space/2;}
   .labelCheck{margin-right:$space;}
   .singleRow{
@@ -268,6 +277,35 @@ $elementPopupWidth: $popupModalWidth - ($space * 3);
     }
   }
 }
+.elementPrintClientScales .form-row{
+  padding-left:$printClientLabel;
+  margin-bottom:$space/2;
+}
+.elementPrintClientTemplates .form-row{
+  clear:left;
+  position:relative;
+  .iconRemove{
+    @include absolute(-($space*2) $space '' '');
+  }
+}
+.elementPrintClientTemplates .form-row.collectionItem{
+   padding-left:$printClientLabel;
+   .form-row.collectionItem{
+      position:relative;
+      padding:0;
+      .labelInput{width:90px;}
+      input{width:190px;}
+      .iconRemove{
+        @include absolute(inherit $space 0 '');
+      }
+   }
+   .labelInput{width:90px;}
+   input{width:190px;}
+}
+.elementPrintClientQuality{
+  
+}
+
 .elementFormSearchRouter{
   $label:90px;
   overflow: auto;

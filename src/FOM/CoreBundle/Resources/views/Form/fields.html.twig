@@ -68,6 +68,8 @@
       {% if allow_delete %}
       {% set attr = attr|merge({'data-allow-delete': 1 }) %}
       {% endif %}
+      {% set attr = attr|merge({'class': attr.class|default('') ~ ' formCollection'}) %}
+      
       {{ block('form_widget') }}
     {% endspaceless %}
 {% endblock collection_widget %}

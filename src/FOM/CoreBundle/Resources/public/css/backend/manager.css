@@ -1653,6 +1653,37 @@ body {
     .elementFormPrintClient .singleRow .input:first-child {
       margin-right: 10px; }
 
+.elementPrintClientScales .form-row {
+  padding-left: 110px;
+  margin-bottom: 10px; }
+
+.elementPrintClientTemplates .form-row {
+  clear: left;
+  position: relative; }
+  .elementPrintClientTemplates .form-row .iconRemove {
+    position: absolute;
+    top: -40px;
+    right: 20px; }
+
+.elementPrintClientTemplates .form-row.collectionItem {
+  padding-left: 110px; }
+  .elementPrintClientTemplates .form-row.collectionItem .form-row.collectionItem {
+    position: relative;
+    padding: 0; }
+    .elementPrintClientTemplates .form-row.collectionItem .form-row.collectionItem .labelInput, .elementPrintClientTemplates .form-row.collectionItem .form-row.collectionItem .popupSubTitle {
+      width: 90px; }
+    .elementPrintClientTemplates .form-row.collectionItem .form-row.collectionItem input {
+      width: 190px; }
+    .elementPrintClientTemplates .form-row.collectionItem .form-row.collectionItem .iconRemove {
+      position: absolute;
+      top: inherit;
+      right: 20px;
+      bottom: 0; }
+  .elementPrintClientTemplates .form-row.collectionItem .labelInput, .elementPrintClientTemplates .form-row.collectionItem .popupSubTitle {
+    width: 90px; }
+  .elementPrintClientTemplates .form-row.collectionItem input {
+    width: 190px; }
+
 .elementFormSearchRouter {
   overflow: auto;
   max-height: 370px; }
