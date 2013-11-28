@@ -1321,6 +1321,8 @@ fieldset {
     text-align: left; }
   .mb-element-searchrouter td {
     padding-right: 10px; }
+  .mb-element-searchrouter .colName {
+    width: 70%; }
 
 .ui-autocomplete {
   z-index: 1000;

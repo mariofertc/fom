@@ -426,6 +426,7 @@ $searchRouterInputWidth:310px;
   }
   td{padding-right:$space/2;}
   tr{@extend .linkButton}
+  .colName{width: 70%;}
 }
 // dublicate ! > components
 .ui-autocomplete{
