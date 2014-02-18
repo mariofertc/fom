@@ -1742,6 +1742,13 @@ body {
 .elementFormPrintClient .scales .collectionItem {
   margin-left: 110px; }
 
+.collectionItemLevel2 > .collectionItem {
+  margin-left: 110px; }
+  .collectionItemLevel2 > .collectionItem .labelInput, .collectionItemLevel2 > .collectionItem .popupSubTitle {
+    width: 60px; }
+  .collectionItemLevel2 > .collectionItem .input {
+    width: 210px; }
+
 .elementPrintClientScales .form-row {
   padding-left: 110px;
   margin-bottom: 10px; }

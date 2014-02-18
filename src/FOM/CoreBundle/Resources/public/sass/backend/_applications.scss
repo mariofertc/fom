@@ -285,6 +285,11 @@ $printClientLabel:110px;
     margin-left: $label;
   }
 }
+.collectionItemLevel2 > .collectionItem{
+  margin-left: $space*5 + 10;
+  .labelInput{width:60px;}
+  .input{width:210px;}
+}
 .elementPrintClientScales .form-row{
   padding-left:$printClientLabel;
   margin-bottom:$space/2;
