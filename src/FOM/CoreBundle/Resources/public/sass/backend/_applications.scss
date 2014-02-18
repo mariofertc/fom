@@ -281,6 +281,9 @@ $printClientLabel:110px;
       &:first-child{margin-right:$space/2;}
     }
   }
+  .scales .collectionItem{
+    margin-left: $label;
+  }
 }
 .elementPrintClientScales .form-row{
   padding-left:$printClientLabel;

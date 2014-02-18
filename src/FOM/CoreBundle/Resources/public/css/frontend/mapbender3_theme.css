@@ -1401,13 +1401,8 @@ fieldset {
     text-align: left; }
   .mb-element-searchrouter td {
     padding-right: 10px; }
-<<<<<<< HEAD
-  .mb-element-searchrouter .colName {
-    width: 70%; }
-=======
   .mb-element-searchrouter .search-forms > form > div > div {
     clear: both; }
->>>>>>> develop
 
 .ui-autocomplete {
   z-index: 1000;

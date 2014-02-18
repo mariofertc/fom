@@ -1739,6 +1739,8 @@ body {
   width: 90px; }
   .elementFormPrintClient .singleRow .input:first-child {
     margin-right: 10px; }
+.elementFormPrintClient .scales .collectionItem {
+  margin-left: 110px; }
 
 .elementPrintClientScales .form-row {
   padding-left: 110px;
