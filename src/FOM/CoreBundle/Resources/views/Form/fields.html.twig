@@ -342,7 +342,6 @@
   {% spaceless %}
     <div {% if 'collection' in form.parent.get('block_prefixes') %}class="collectionItem"{% endif %}>
       {{ form_label(form) }}
-      {% endif %}
       {{ form_errors(form) }}
       {{ form_widget(form) }}
       {% if form.parent.get('allow_delete') %}
