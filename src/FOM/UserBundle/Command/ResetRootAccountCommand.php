@@ -79,7 +79,7 @@ EOT
             $helper->setPassword($root, $input->getOption('password'));
         }
 
-        $em = $this->getContainer()->get('doctrine')->getEntityManager();
+        $em = $this->getContainer()->get('doctrine')->getManager();
         $em->persist($root);
         $em->flush();
 

@@ -13,16 +13,16 @@
           <a href="{{ path('mapbender_core_welcome_list') }}"><img class="logo" alt="Mapbender 3 Manager" src="{{ asset(fom.server_logo)}}" /></a>
         </div>
         {% if app.user != "" %}
-          {% render "FOMManagerBundle:Manager:menu" with { "request": app.request } %}
+          {{ render(controller("FOMManagerBundle:Manager:menu", {"request": app.request})) }}
         {% endif %}
       </div>
 
       <div class="rightPane">
 
         {# flash me baby #}
-        {% for key, flash in app.session.flashes %}
+        {% for key, flash in app.session.flashbag.all %}
           <div class="flashBox {{ key }}">
-            {{ flash | trans }}
+              {% for message in flash %}{% if loop.first == false %}<br/>{% endif %}{{ message | trans }}{% endfor %}
           </div>
         {% endfor %}
 
@@ -41,7 +41,7 @@
         <div class="contentPane">
           <div id="version" class="mapbenderVersion smallText">v. {{ fom.server_version }}</div>
           {% if app.user != "" %}
-            {% render "FOMManagerBundle:Manager:bread" with { "request": app.request } %}
+            {{ render(controller("FOMManagerBundle:Manager:bread", {"request": app.request})) }}
           {% endif %}
           <div class="content shadowBox">
             <h1 class="contentTitle">{{ title|trans }}</h1>

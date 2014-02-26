@@ -84,7 +84,7 @@ class FOMGroupsType extends AbstractType
     {
         if($options['return_entity'] === false)
         {
-            $entityManager = $this->container->get('doctrine')->getEntityManager();
+            $entityManager = $this->container->get('doctrine')->getManager();
             $transformer = new GroupIdTransformer($entityManager);
             $builder->addModelTransformer($transformer);
         }
