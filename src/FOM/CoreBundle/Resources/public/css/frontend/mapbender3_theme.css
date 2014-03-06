@@ -240,7 +240,8 @@ p, pre, dl, menu, ol, ul {
 .iconPublishActive:before, .iconAppDefault:before, .iconCancel:before,
 .iconThumbsUp:before, .iconThumbsDown:before, .iconGroup:before, .iconUser:before,
 .iconSettings:before, .iconSignOut:before, .iconSignIn:before, .iconMore:before,
-.iconCopy:before, .iconKey:before, .iconWarning:before, .mb-element-layertree [data-state="error"]:before {
+.iconCopy:before, .iconKey:before, .iconWarning:before, .mb-element-layertree [data-state="error"]:before, .iconEmail:before, .iconTwitter:before,
+.iconFacebook:before, .iconGooglePlus:before {
   font-family: FontAwesome; }
 
 .iconCheckboxActive:before {
@@ -377,6 +378,18 @@ p, pre, dl, menu, ol, ul {
 
 .iconWarning:before, .mb-element-layertree [data-state="error"]:before {
   content: "\f071"; }
+
+.iconEmail:before {
+  content: "\f0e0"; }
+
+.iconTwitter:before {
+  content: "\f081"; }
+
+.iconFacebook:before {
+  content: "\f082"; }
+
+.iconGooglePlus:before {
+  content: "\f0d4"; }
 
 .iconGroup:before {
   content: "\f0c0"; }
@@ -1071,8 +1084,7 @@ fieldset {
     display: none; }
 
 .sidePaneOpened .sideContent {
-  display: block;
-  overflow: auto; }
+  display: block; }
 
 /* -------------------------------------------- ELEMENTS */
 /* ----------------------------------------------------------- CONTENT */
@@ -1375,6 +1387,66 @@ fieldset {
   color: #aa2323;
   position: absolute;
   right: 40px; }
+
+.layer-menu-btn {
+  position: relative; }
+
+.layer-menu {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: -5px;
+  z-index: 20;
+  min-width: 120px;
+  max-width: 200px;
+  border: solid 1px #a2a2a2;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+  .layer-menu:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #404040;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: -10px;
+    left: 0; }
+
+.layer-opacity-bar {
+  position: relative;
+  color: white;
+  height: 5px;
+  background-color: #a2a2a2;
+  width: 100px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px; }
+
+.layer-opacity-handle {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 16px;
+  line-height: 16px;
+  background-color: #6fb536;
+  font-size: 12px;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
 
 /* Legend */
 .notshow, .notvisible {
