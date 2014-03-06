@@ -34,7 +34,7 @@ $(document).on('click', '.collectionRemove', function(event) {
     event.preventDefault();
 
     // Get the item...
-    var item = $(event.target).closest('.form-row');
+    var item = $(event.target).closest('.collectionItem');
     // And remove it.
     item.remove();
 });
