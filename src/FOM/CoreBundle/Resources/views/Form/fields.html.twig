@@ -341,9 +341,6 @@
       {{ form_label(form) }}
       {{ form_errors(form) }}
       {{ form_widget(form) }}
-      {% if form.parent.get('allow_delete') %}
-      <a href="#delete" class="collectionRemove iconSmall iconRemove"></a>
-      {% endif %}
     </div>
   {% endspaceless %}
 {% endblock form_row %}
