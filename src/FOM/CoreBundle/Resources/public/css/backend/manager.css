@@ -1765,6 +1765,8 @@ body {
 .elementPrintClientScales .form-row {
   padding-left: 110px;
   margin-bottom: 10px; }
+.elementPrintClientScales .collectionItem {
+  margin-bottom: 10px; }
 
 .elementPrintClientTemplates .form-row {
   clear: left;

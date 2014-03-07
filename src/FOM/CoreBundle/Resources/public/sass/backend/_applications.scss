@@ -290,9 +290,12 @@ $printClientLabel:110px;
   .labelInput{width:60px;}
   .input{width:210px;}
 }
-.elementPrintClientScales .form-row{
-  padding-left:$printClientLabel;
-  margin-bottom:$space/2;
+.elementPrintClientScales{
+  .form-row{
+    padding-left:$printClientLabel;
+    margin-bottom:$space/2;
+  }
+  .collectionItem{margin-bottom:$space/2;}
 }
 .elementPrintClientTemplates .form-row{
   clear:left;
